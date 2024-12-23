@@ -1,5 +1,5 @@
 /*
- *   Copyright (c) 2024 Nazmul Idris
+ *   Copyright (c) 2024 R3BL LLC
  *   All rights reserved.
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,4 +15,16 @@
  *   limitations under the License.
  */
 
-pub const SPACER: &str = " ";
+// Attach sources.
+pub mod custom_event_formatter;
+pub mod public_api;
+pub mod rolling_file_appender_impl;
+pub mod tracing_config;
+pub mod tracing_init;
+
+// Re-export.
+pub use custom_event_formatter::*;
+pub use public_api::*;
+pub use rolling_file_appender_impl::*;
+pub use tracing_config::*;
+pub use tracing_init::*;
